@@ -1,0 +1,222 @@
+[
+    {
+        "id": "EQ001",
+        "name": "X-ray Machine",
+        "department": "Radiology",
+        "location": "R001",
+        "status": "Operational",
+        "lastMaintenanceDate": "2026-03-23",
+        "nextMaintenanceDate": "2027-03-23",
+        "updatedAt": "2026-03-23T10:00:00Z",
+        "technician": "John"
+    },
+    {
+        "id": "EQ002",
+        "name": "MRI Scanner",
+        "department": "Radiology",
+        "location": "R002",
+        "status": "Faulty",
+        "lastMaintenanceDate": "2026-02-15",
+        "nextMaintenanceDate": "2027-02-15",
+        "updatedAt": "2026-02-15T10:00:00Z",
+        "technician": "John"
+    },
+    {
+        "id": "EQ003",
+        "name": "Ultrasound Machine",
+        "department": "Obstetrics & Gynecology",
+        "location": "OG001",
+        "status": "Maintenance Required",
+        "lastMaintenanceDate": "2026-03-23",
+        "nextMaintenanceDate": "2027-03-23",
+        "updatedAt": "2026-03-23T09:00:00Z",
+        "technician": "Jane"
+    },
+    {
+        "id": "EQ004",
+        "name": "Ventilator",
+        "department": "Intensive Care Unit",
+        "location": "ICU001",
+        "status": "Maintenance Required",
+        "lastMaintenanceDate": "2026-06-29",
+        "nextMaintenanceDate": "2026-09-29",
+        "updatedAt": "2026-06-29T12:00:00Z",
+        "technician": "Alice"
+    },
+    {
+        "id": "EQ005",
+        "name": "Defibrillator",
+        "department": "Emergency Department",
+        "location": "ED001",
+        "status": "Operational",
+        "lastMaintenanceDate": "2026-05-10",
+        "nextMaintenanceDate": "2026-11-10",
+        "updatedAt": "2026-05-10T11:00:00Z",
+        "technician": "Bob"
+    },
+    {
+        "id": "EQ006",
+        "name": "Infusion Pump",
+        "department": "Intensive Care Unit",
+        "location": "ICU001",
+        "status": "Operational",
+        "lastMaintenanceDate": "2026-07-15",
+        "nextMaintenanceDate": "2026-10-15",
+        "updatedAt": "2026-07-15T10:00:00Z",
+        "technician": "Alice"
+    },
+    {
+        "id": "EQ007",
+        "name": "Patient Monitor",
+        "department": "Intensive Care Unit",
+        "location": "ICU002",
+        "status": "Operational",
+        "lastMaintenanceDate": "2026-07-10",
+        "nextMaintenanceDate": "2026-11-10",
+        "updatedAt": "2026-07-10T11:00:00Z",
+        "technician": "Alice"
+    },
+    {
+        "id": "EQ008",
+        "name": "Anesthesia Machine",
+        "department": "Operating Room",
+        "location": "OR001",
+        "status": "Maintenance Required",
+        "lastMaintenanceDate": "2026-06-20",
+        "nextMaintenanceDate": "2026-09-20",
+        "updatedAt": "2026-06-20T14:00:00Z",
+        "technician": "Charlie"
+    },
+    {
+        "id": "EQ009",
+        "name": "Surgical Lights",
+        "department": "Operating Room",
+        "location": "OR001",
+        "status": "Operational",
+        "lastMaintenanceDate": "2026-05-30",
+        "nextMaintenanceDate": "2026-11-30",
+        "updatedAt": "2026-05-30T14:00:00Z",
+        "technician": "Charlie"
+    },
+    {
+        "id": "EQ010",
+        "name": "Autoclave Sterilizer",
+        "department": "Sterilization Department",
+        "location": "SD001",
+        "status": "Maintenance Required",
+        "lastMaintenanceDate": "2026-06-10",
+        "nextMaintenanceDate": "2027-06-10",
+        "updatedAt": "2026-06-10T14:00:00Z",
+        "technician": "Charlie"
+    },
+    {
+        "id": "EQ011",
+        "name": "Electrocardiogram (ECG) Machine",
+        "department": "Cardiology",
+        "location": "C001",
+        "status": "Faulty",
+        "lastMaintenanceDate": "2026-07-01",
+        "nextMaintenanceDate": "2027-07-01",
+        "updatedAt": "2026-07-01T15:00:00Z",
+        "technician": "David"
+    },
+    {
+        "id": "EQ012",
+        "name": "Blood Gas Analyzer",
+        "department": "Laboratory",
+        "location": "L001",
+        "status": "Operational",
+        "lastMaintenanceDate": "2026-06-15",
+        "nextMaintenanceDate": "2026-12-15",
+        "updatedAt": "2026-06-15T10:00:00Z",
+        "technician": "Eve"
+    },
+    {
+        "id": "EQ013",
+        "name": "Centrifuge",
+        "department": "Laboratory",
+        "location": "L002",
+        "status": "Maintenance Required",
+        "lastMaintenanceDate": "2026-06-20",
+        "nextMaintenanceDate": "2026-12-20",
+        "updatedAt": "2026-06-20T14:00:00Z",
+        "technician": "Eve"
+    },
+    {
+        "id": "EQ014",
+        "name": "Microscope",
+        "department": "Laboratory",
+        "location": "L003",
+        "status": "Operational",
+        "lastMaintenanceDate": "2026-07-05",
+        "nextMaintenanceDate": "2027-01-05",
+        "updatedAt": "2026-07-05T11:00:00Z",
+        "technician": "Eve"
+    },
+    {
+        "id": "EQ015",
+        "name": "Incubator",
+        "department": "Neonatal Intensive Care Unit",
+        "location": "NICU001",
+        "status": "Operational",
+        "lastMaintenanceDate": "2026-06-25",
+        "nextMaintenanceDate": "2026-12-25",
+        "updatedAt": "2026-06-25T12:00:00Z",
+        "technician": "Frank"
+    },
+    {
+        "id": "EQ016",
+        "name": "Dialysis Machine",
+        "department": "Renal",
+        "location": "R001",
+        "status": "Operational",
+        "lastMaintenanceDate": "2026-06-10",
+        "nextMaintenanceDate": "2026-12-10",
+        "updatedAt": "2026-06-10T14:00:00Z",
+        "technician": "Grace"
+    },
+    {
+        "id": "EQ017",
+        "name": "Oxygen Concentrator",
+        "department": "General Ward",
+        "location": "GW001",
+        "status": "Faulty",
+        "lastMaintenanceDate": "2026-06-15",
+        "nextMaintenanceDate": "2026-12-15",
+        "updatedAt": "2026-06-15T10:00:00Z",
+        "technician": "Paul"
+    },
+    {
+        "id": "EQ018",
+        "name": "Nebulizer",
+        "department": "General Ward",
+        "location": "GW002",
+        "status": "Operational",
+        "lastMaintenanceDate": "2026-06-20",
+        "nextMaintenanceDate": "2026-12-20",
+        "updatedAt": "2026-06-20T14:00:00Z",
+        "technician": "Paul"
+    },
+    {
+        "id": "EQ019",
+        "name": "Suction Machine",
+        "department": "Emergency Department",
+        "location": "ED002",
+        "status": "Operational",
+        "lastMaintenanceDate": "2026-06-25",
+        "nextMaintenanceDate": "2026-12-25",
+        "updatedAt": "2026-06-25T12:00:00Z",
+        "technician": "Bob"
+    },
+    {
+        "id": "EQ020",
+        "name": "Pulse Oximeter",
+        "department": "General Ward",
+        "location": "GW003",
+        "status": "Operational",
+        "lastMaintenanceDate": "2026-07-01",
+        "nextMaintenanceDate": "2026-12-01",
+        "updatedAt": "2026-07-01T15:00:00Z",
+        "technician": "Paul"
+    }
+]
