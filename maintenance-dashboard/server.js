@@ -10,6 +10,11 @@ const app = express();
 // Port on which the webhook receiver will run.
 const port = 8081;
 
+// In-memory storage for successfully verified maintenance events.
+// This is sufficient for the prototype; a production system would
+// normally persist these events in a database.
+const maintenanceEvents = [];
+
 /*
  * Middleware for parsing incoming JSON requests.
  *
@@ -62,13 +67,28 @@ app.post('/webhook/equipment', (req, res) => {
         return res.status(401).send('Invalid signature');
     }
 
-    // The signature is valid, so the data can be trusted.
-    const maintenanceData = req.body;
+const maintenanceData = req.body;
 
-    console.log('Valid webhook received:', maintenanceData);
+// Store only successfully verified maintenance events.
+// Invalid webhook requests are rejected before reaching this point.
+maintenanceEvents.push(maintenanceData);
+
+console.log('Valid webhook received:', maintenanceData);
 
     // Tell the sender that the webhook was successfully processed.
     res.status(200).send('Maintenance data received');
+});
+
+/*
+ * API endpoint for retrieving verified maintenance events.
+ *
+ * GET /api/maintenance-events
+ *
+ * The dashboard browser will use this endpoint to retrieve
+ * maintenance events that have already passed HMAC verification.
+ */
+app.get('/api/maintenance-events', (req, res) => {
+    res.json(maintenanceEvents);
 });
 
 /*
