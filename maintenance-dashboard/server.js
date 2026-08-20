@@ -31,6 +31,9 @@ app.use(express.json({
     }
 }));
 
+// Serve static frontend files such as HTML, CSS and JavaScript.
+app.use(express.static(__dirname));
+
 /*
  * Webhook endpoint for receiving equipment maintenance data.
  *
@@ -92,17 +95,16 @@ app.get('/api/maintenance-events', (req, res) => {
 });
 
 /*
- * Root route used to confirm that the maintenance server is running.
+ * Serve the Maintenance Dashboard interface.
  *
  * GET /
  *
- * Opening http://localhost:8081 in a browser should display
- * "Maintenance Dashboard is running".
+ * Express sends index.html to the browser when the dashboard
+ * root URL is opened.
  */
 app.get('/', (req, res) => {
-    res.send('Maintenance Dashboard is running');
+    res.sendFile(__dirname + '/index.html');
 });
-
 /*
  * Start the Express server.
  *
